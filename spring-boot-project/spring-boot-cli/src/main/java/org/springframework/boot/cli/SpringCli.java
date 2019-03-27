@@ -49,6 +49,7 @@ public final class SpringCli {
 
 	public static void main(String... args) {
 		System.setProperty("java.awt.headless", Boolean.toString(true));
+		System.setProperty("java.awt.dummy", Boolean.toString(true));
 		LogbackInitializer.initialize();
 
 		CommandRunner runner = new CommandRunner("spring");
