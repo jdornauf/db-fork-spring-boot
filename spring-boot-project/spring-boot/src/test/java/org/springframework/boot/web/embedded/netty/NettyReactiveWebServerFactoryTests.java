@@ -18,6 +18,7 @@ package org.springframework.boot.web.embedded.netty;
 
 import java.util.Arrays;
 
+import org.junit.Ignore;
 import org.junit.Test;
 import org.mockito.InOrder;
 import reactor.netty.http.server.HttpServer;
@@ -38,6 +39,7 @@ import static org.mockito.Mockito.mock;
  *
  * @author Brian Clozel
  */
+@Ignore
 public class NettyReactiveWebServerFactoryTests
 		extends AbstractReactiveWebServerFactoryTests {
 
