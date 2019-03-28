@@ -16,6 +16,7 @@
 
 package org.springframework.boot.test.autoconfigure.data.mongo;
 
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
@@ -33,6 +34,7 @@ import static org.assertj.core.api.Assertions.assertThat;
  */
 @RunWith(SpringRunner.class)
 @DataMongoTest(includeFilters = @Filter(Service.class))
+@Ignore
 public class DataMongoTestWithIncludeFilterIntegrationTests {
 
 	@Autowired
